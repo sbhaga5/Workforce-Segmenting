@@ -9,10 +9,16 @@ SalaryIncreaseData <- read_excel(FileName, sheet = 'Salary Increase')
 #Add 1 to make this calculation easier for later
 SalaryIncreaseData$Rate <- SalaryIncreaseData$Rate + 1
 
-#Initial Values
+YOSStart <- 1
+YOSEnd <- 39
+YOSIncrement <- 5
+YOSDivision <- 5
+
 AgeStart <- 20
 AgeEnd <- 73
-YOSDivision <- 5
+
+#We separate Increment and division because of the chane in increment from 5 to 9 towards the end for 65-73
+AgeIncrement <- 5
 AgeDivision <- 5
 #
 #####################################################################################################################
